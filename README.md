@@ -29,6 +29,14 @@ This is a version of lwip running on Ubuntu
 	
    Then, re-compile the source code, and run the lwip-linux app. 
 		
+
+### 3.3 PING test 
+   Under the header file `./lwip-2.2.0/test/linux/lwip.h`, set `TEST_ID` to `PING`
+
+        #define TEST_ID         PING
+        #define PING_ADDR       IP_OF_ACCESS_POINT
+
+
    Notes:
    - The remote server address is being hard code at "192.168.2.12", we can modify this address via macro TCP_REMOTE_SERVER_ADDR under ./lwip-2.2.0/test/linux/lwip.h.
    - Remote server port is 6677, it can be changed via macro TCP_REMOTE_SERVER_PORT. 
