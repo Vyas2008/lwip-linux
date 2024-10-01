@@ -8,12 +8,12 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include lwip-2.2.0/test/linux/subdir.mk
+-include linux_porting/src/arch/subdir.mk
+-include linux_porting/test/linux/subdir.mk
 -include lwip-2.2.0/src/netif/subdir.mk
 -include lwip-2.2.0/src/core/ipv6/subdir.mk
 -include lwip-2.2.0/src/core/ipv4/subdir.mk
 -include lwip-2.2.0/src/core/subdir.mk
--include lwip-2.2.0/src/arch/subdir.mk
 -include lwip-2.2.0/src/apps/tftp/subdir.mk
 -include lwip-2.2.0/src/apps/sntp/subdir.mk
 -include lwip-2.2.0/src/apps/snmp/subdir.mk

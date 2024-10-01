@@ -28,7 +28,7 @@
 
 #define TCP_SERVER_PRIO           TCP_PRIO_MIN
 #define TCP_REMOTE_SERVER_ADDR      ((11 << 24) | (2 << 16) | (168 << 8) | (192))
-#define PING_ADDR                   ((252 << 24) | (5 << 16) | (168 << 8) | (192))
+#define PING_ADDR                   ((2 << 24) | (133 << 16) | (168 << 8) | (192))
 #define TCP_REMOTE_SERVER_PORT    49183
 #define TCP_LOCAL_SERVER_PORT     6677
 #define IF_NAME     "wlxe046ee21a606"

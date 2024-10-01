@@ -23,10 +23,10 @@ lwip-2.2.0/src/apps/snmp \
 lwip-2.2.0/src/apps/sntp \
 lwip-2.2.0/src/apps/ping \
 lwip-2.2.0/src/apps/tftp \
-lwip-2.2.0/src/arch \
 lwip-2.2.0/src/core \
 lwip-2.2.0/src/core/ipv4 \
 lwip-2.2.0/src/core/ipv6 \
 lwip-2.2.0/src/netif \
-lwip-2.2.0/test/linux \
+linux_porting/src/arch \
+linux_porting/test/linux \
 

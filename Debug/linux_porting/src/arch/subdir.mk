@@ -4,25 +4,25 @@
 
 # Add inputs and outputs from these tool invocations to the build variables
 C_SRCS += \
-../lwip-2.2.0/src/arch/if.c \
-../lwip-2.2.0/src/arch/netif.c \
-../lwip-2.2.0/src/arch/pcap.c
+../linux_porting/src/arch/if.c \
+../linux_porting/src/arch/netif.c \
+../linux_porting/src/arch/pcap.c
 
 OBJS += \
-./lwip-2.2.0/src/arch/if.o \
-./lwip-2.2.0/src/arch/netif.o \
-./lwip-2.2.0/src/arch/pcap.o
+./linux_porting/src/arch/if.o \
+./linux_porting/src/arch/netif.o \
+./linux_porting/src/arch/pcap.o
 
 C_DEPS += \
-./lwip-2.2.0/src/arch/if.d \
-./lwip-2.2.0/src/arch/netif.d
+./linux_porting/src/arch/if.d \
+./linux_porting/src/arch/netif.d
 
 
 # Each subdirectory must supply rules for building sources it contributes
-lwip-2.2.0/src/arch/%.o: ../lwip-2.2.0/src/arch/%.c
+linux_porting/src/arch/%.o: ../linux_porting/src/arch/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross GCC Compiler'
-	gcc -I../lwip-2.2.0/src/include -I../lwip-2.2.0/src -I../lwip-2.2.0/test/linux -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	gcc -I../lwip-2.2.0/src/include -I../lwip-2.2.0/src -I../linux_porting/test/linux -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
