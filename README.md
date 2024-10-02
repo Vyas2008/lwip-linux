@@ -42,6 +42,11 @@ This is a version of lwip running on Ubuntu
    - Remote server port is 6677, it can be changed via macro TCP_REMOTE_SERVER_PORT. 
 		
 
+### 3.4 Testing with mac80211_hwsim
+   Details about mac80211_hwsim can be found at https://www.kernel.org/doc/html/latest/networking/mac80211_hwsim/mac80211_hwsim.html
+
+   - Add default gateway in namespaces with "sudo ip netns exec <namespace_name> sudo ip route add default via <ip_address> dev <interface_name>"
+
 ## 4. Other notes 
    - lwip-linux only supports 32 local server ports from 6677 to 6709. When we create a tcp server, please use the server port in this range.
    - For local client ports, the lwip-linux supports to allocate port in range from 49152 to 49184.  
